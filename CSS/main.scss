@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url(../policies/Manrope/static/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url(../policies/Manrope/static/Manrope-Bold.ttf);
+}
+
+$background-color: hsl(210, 46%, 95%);
+$bold-color: hsl(217, 19%, 35%);
+$article-color: hsl(214, 17%, 51%);
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Manrope-Medium', sans-serif;
+    font-size: 13px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $background-color;
+    .article {
+        display: flex;
+        flex-direction: row;
+        max-width: 900px;
+        max-height: 500px;
+        .article__image {
+            width: 45%;
+            height: 350px;
+            background-image: url(../images/drawers.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .article__text {
+            width: 50%;
+            background-color: white;
+            border-radius: 0px 10px 10px 0px;
+            padding: 30px;
+            h1 {
+                font-family: 'Manrope-Bold', sans-serif;
+                color: $bold-color;
+            }
+            p {
+                color: $article-color;
+                font-size: 16px;
+            }
+            .article__text__author {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .avatar {
+                    border-radius: 300px;
+                }
+                .share {
+                    background-color: $background-color;
+                    border-radius: 300px;
+                    padding: 10px;
+                }
+                .article__text__author__text {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 0.3;
+                    margin-left: -180px;
+                    .author {
+                        color: $bold-color;
+                    }
+                    .date {
+                        color: $article-color;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

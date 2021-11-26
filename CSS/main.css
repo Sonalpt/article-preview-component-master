@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Manrope-Medium';
+  src: url(../policies/Manrope/static/Manrope-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url(../policies/Manrope/static/Manrope-Bold.ttf);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Manrope-Medium', sans-serif;
+  font-size: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ecf2f8;
+}
+
+body .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 900px;
+  max-height: 500px;
+}
+
+body .article .article__image {
+  width: 45%;
+  height: 350px;
+  background-image: url(../images/drawers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+body .article .article__text {
+  width: 50%;
+  background-color: white;
+  border-radius: 0px 10px 10px 0px;
+  padding: 30px;
+}
+
+body .article .article__text h1 {
+  font-family: 'Manrope-Bold', sans-serif;
+  color: #48556a;
+}
+
+body .article .article__text p {
+  color: #6d7f97;
+  font-size: 16px;
+}
+
+body .article .article__text .article__text__author {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .article .article__text .article__text__author .avatar {
+  border-radius: 300px;
+}
+
+body .article .article__text .article__text__author .share {
+  background-color: #ecf2f8;
+  border-radius: 300px;
+  padding: 10px;
+}
+
+body .article .article__text .article__text__author .article__text__author__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 0.3;
+  margin-left: -180px;
+}
+
+body .article .article__text .article__text__author .article__text__author__text .author {
+  color: #48556a;
+}
+
+body .article .article__text .article__text__author .article__text__author__text .date {
+  color: #6d7f97;
+  font-size: 14px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

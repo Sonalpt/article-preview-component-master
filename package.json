@@ -1,0 +1,19 @@
+{
+  "name": "article-preview-component-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./CSS/main.scss:./CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sonalpt/article-preview-component-master.git"
+  },
+  "author": "remsB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sonalpt/article-preview-component-master/issues"
+  },
+  "homepage": "https://github.com/Sonalpt/article-preview-component-master#readme"
+}
