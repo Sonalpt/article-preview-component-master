@@ -89,9 +89,10 @@ body .article .article__text .article__text__author .avatar {
 }
 
 body .article .article__text .article__text__author .share {
-  background-color: #ecf2f8;
+  background: #ecf2f8;
   border-radius: 300px;
   padding: 10px;
+  margin-top: 10px;
 }
 
 body .article .article__text .article__text__author .article__text__author__text {
@@ -113,6 +114,173 @@ body .article .article__text .article__text__author .article__text__author__text
 body .article .article__text .article__text__author .article__text__author__text .date {
   color: #6d7f97;
   font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  body .article {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 80%;
+    max-width: 90%;
+    max-height: 80%;
+  }
+  body .article .article__image {
+    min-width: 98%;
+    min-height: 40%;
+    background-image: url(../images/drawers.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  body .article .article__text {
+    text-align: center;
+    min-width: 80%;
+    background-color: white;
+    border-radius: 0px 0px 0px 0px;
+    padding: 30px;
+  }
+  body .article .article__text h1 {
+    font-family: 'Manrope-Bold', sans-serif;
+    color: #48556a;
+  }
+  body .article .article__text p {
+    color: #6d7f97;
+    font-size: 16px;
+  }
+  body .article .article__text .article__text__author {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .article .article__text .article__text__author .avatar {
+    border-radius: 300px;
+  }
+  body .article .article__text .article__text__author .share {
+    background: #ecf2f8;
+    border-radius: 300px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  body .article .article__text .article__text__author .article__text__author__text {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 0.3;
+    margin-left: 0px;
+  }
+  body .article .article__text .article__text__author .article__text__author__text .author {
+    color: #48556a;
+  }
+  body .article .article__text .article__text__author .article__text__author__text .date {
+    color: #6d7f97;
+    font-size: 14px;
+  }
+}
+
+.share__bubble {
+  position: relative;
+  left: 428px;
+  bottom: 165px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  font-family: 'Manrope-Bold', sans-serif;
+  color: #9eafc2;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 230px;
+  text-align: center;
+  background-color: #48556a;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.share__bubble span {
+  padding-right: 30px;
+}
+
+.share__bubble img {
+  padding-right: 15px;
+  position: relative;
+  left: 10px;
+}
+
+@media (max-width: 900px) {
+  .share__bubble {
+    position: relative;
+    left: 0px;
+    bottom: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    font-family: 'Manrope-Bold', sans-serif;
+    color: #9eafc2;
+    border-radius: 10px 10px 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: #48556a;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .share__bubble span {
+    padding-right: 30px;
+  }
+  .share__bubble img {
+    padding-right: 15px;
+    position: relative;
+    left: 10px;
+  }
+}
+
+.undisplayed {
+  display: none;
+}
+
+.activeState {
+  background: #48556a;
 }
 
 .attribution {
